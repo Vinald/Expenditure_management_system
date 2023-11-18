@@ -1,6 +1,4 @@
 {% extends 'partials/base.html' %}
-
-<!-- page title-->
 {% block title %} Register Page {% endblock %}
 
 <!-- django crispy forms -->
@@ -9,6 +7,7 @@
 
 <!-- Page content -->
 {% block content %}
+
     <div class="container">
         <div class="row mt-5">
             <div class="col-md-6 offset-md-3">
@@ -17,7 +16,7 @@
                     <hr>
                     <form method="POST">
                         {% csrf_token %}
-                        {{ form|crispy}}
+                        {{ form }}
                         <input type="submit" class="btn btn-success" value="Register">
                     </form>
                 </div>
