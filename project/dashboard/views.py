@@ -3,4 +3,16 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse('index page')
+    return render(request, 'dashboard/index.html')
+
+
+def staff(request):
+    return render(request, 'dashboard/staff.html')
+
+
+def item(request):
+    return render(request, 'dashboard/item.html')
+
+
+def quantity(request):
+    return render(request, 'dashboard/quantity.html')
