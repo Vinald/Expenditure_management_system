@@ -2,14 +2,12 @@
 
 <!-- Name of the page-->
 {% block title %}Staff {% endblock %}
-<body>
-  
-  <!-- heading -->
-  <div class="container">
-    <h2 class="text-center white text-uppercase mt-3 text-primary">Staff</h2>
-  </div>
-  <!-- end of heading -->
 
+
+{% block content %}
+    <!-- top navbar -->
+    {% include 'partials/topnav.html' %}
+    <!-- end of top navbar -->
 
 
   <!-- table -->
@@ -46,4 +44,4 @@
   </div>
   <!-- end of table -->
 
-</body>
+{% endblock %}
