@@ -38,4 +38,4 @@ admin.site.register(models.Item, ItemAdmin)
 admin.site.register(models.Quantity, QuantityAdmin)
 
 # unregister the Group model from admin.
-admin.site.unregister(Group)
+# admin.site.unregister(Group)
